@@ -144,6 +144,7 @@ func addOne(number: Int) -> Int {
 func returnTwoNumber() -> (numberOne: Int, numberTwo: Int) {
     return (23, 45)
 }
+```
 
 ## Objets et Classes
 
@@ -167,6 +168,7 @@ class Car {
 let honda = Car(brand: "Honda")
 let whatIsTheBrand = honda.whatIsTheBrand()
 ```
+
 ### Héritage
 Une classe peut hériter d'une autre classe. Elle peut également surcharger ses fonctions
 ```swift
