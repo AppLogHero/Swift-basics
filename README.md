@@ -124,4 +124,23 @@ repeat {
 } while m < 100
 ```
 
+## Fonctions
 
+Pour créer une fonction il suffit d'utiliser le mot clé `func` et le symbole `->` suivie d'un type de retour si nécéssaire
+```swift
+func returnVoid() {
+    print("Void")
+}
+
+func returnOne() -> Int {
+    return 1
+}
+
+func addOne(number: Int) -> Int {
+    return number + 1
+}
+
+//retourner un tuple
+func returnTwoNumber() -> (numberOne: Int, numberTwo: Int) {
+    return (23, 45)
+}
