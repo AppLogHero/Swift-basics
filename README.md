@@ -45,3 +45,50 @@ var monDict2 = [
     "jeudi": "Projet",
     "vendredi": "Rendu+Sountenance"
 ]
+
+var monDictVide = [:]
+```
+
+## Boucles et Conditions
+
+### `if` et `switch`
+
+#### `if`
+```swift
+
+let a = 1
+let b = 2
+
+if a > b {
+    return true
+} else {
+    return false
+}
+
+//Vérifier qu'une valeur n'est pas `nil` (null)
+var total: Int? = nil
+
+if let total = total {
+    ...
+} else {
+    ...
+}
+```
+
+#### `switch`
+```swift
+var count = 3
+
+switch count {
+case 1:
+    ...
+case 2:
+    ...
+case 3:
+    ...
+default:
+    ...
+}
+```
+
+
