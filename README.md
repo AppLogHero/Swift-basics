@@ -144,3 +144,43 @@ func addOne(number: Int) -> Int {
 func returnTwoNumber() -> (numberOne: Int, numberTwo: Int) {
     return (23, 45)
 }
+
+## Objets et Classes
+
+Pour créer un classe il suffit d'utiliser le mot clé `class`. Une classe peut contenir des propriétés (`var`,`let`) mais également des functions à la différence que, c'est éléments dépenderont du contexte de la classe
+```swift
+//Déclaration
+class Car {
+    let numberOfWheels = 4
+    let brand: String
+    
+    init(brand: String) {
+        self.brand = brand
+    }
+    
+    func whatIsTheBrand() -> String {
+        return "The brand is :\(brand)"
+    }
+}
+
+//Appel
+let honda = Car(brand: "Honda")
+let whatIsTheBrand = honda.whatIsTheBrand()
+```
+### Héritage
+Une classe peut hériter d'une autre classe. Elle peut également surcharger ses fonctions
+```swift
+class Mustang: Car {
+    
+    let carBrand = "Mustang"
+    
+    init() {
+        super.init(brand: carBrand)
+    }
+    
+    override func whatIsTheBrand() -> String {
+        return "The brand is :\(brand)"
+    }
+    
+}
+```
