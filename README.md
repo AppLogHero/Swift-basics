@@ -91,4 +91,37 @@ default:
 }
 ```
 
+### `for` et `while`
+
+#### `for`
+```swift
+
+let days = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"]
+
+for day in days {
+    print("jour: \(day)")
+}
+
+days.forEach { day in 
+    print("jour: \(day)")
+}
+
+for i in 0...5 {
+    ...
+}
+```
+
+#### `while`
+```swift
+var n = 2
+while n < 100 {
+    n *= 2
+}
+
+var m = 2
+repeat {
+    m *= 2
+} while m < 100
+```
+
 
