@@ -296,4 +296,4 @@ let values = [23, 45, 3, 567, 6]
 values.filter { value in
     return value < 10 // 3, 6
 }
-``
+```
