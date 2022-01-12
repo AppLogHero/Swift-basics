@@ -249,3 +249,51 @@ extension Ipad {
 
 }
 ```
+
+## map, compactMap, reduce, filter, sort
+Les fonctions ci-dessus sont toutes utiles pour les collections (liste / dictionnaire) 
+
+### map
+map est une fonction qui peut correspondre au fonctionnement d'un foreach
+```swift
+let values = [0, 1, 2, 3]
+values.map { value in
+    print(value) //0 1 2...
+}
+```
+
+### compactMap
+compactMap est la même principe que map à la différence qu'il filtera le valeur `nil` et fera en sorte d'`unwrap` les valeurs optionel
+```swift
+let values: [Int?] = [0, 1, 2, nil, 4]
+values.flatMap { values in
+    print(value) //0 1 2 4
+}
+```
+
+###reduce
+reduce permets de prendre tout les élement d'une liste est d'effectuer des opérations
+```swift
+let values = [0, 1, 2, 3]
+let sum = values.reduce(0, +) //6
+let product = value.reduce(0, *) //0
+```
+
+### sort
+sort permet de trier les valeurs d'une liste
+```swift
+let values = [0, 3, 34, 2, 345]
+values.sorted()
+values.sorted { value1, value2 in
+    return value1 > value 2 //[0, 2, 3, 34, 345]
+}
+```
+
+### filter
+filter permet de filtrer une liste en fonction d'une condition
+```swift
+let values = [23, 45, 3, 567, 6]
+values.filter { value in
+    return value < 10 // 3, 6
+}
+``
