@@ -186,3 +186,66 @@ class Mustang: Car {
     
 }
 ```
+
+## Structures et Enumérations
+
+### Enumérations
+Pour créer une énumération il faut utiliser le mot clé `enum`. Comme pour les `class` les énumérations peuvent contenir des méthodes
+```swift
+enum AverageBudget {
+    case low
+    case medium
+    case high
+    
+    func budgetInEuro() -> String {
+        switch self {
+        case .low:
+            return "€"
+        case .medium:
+            return "€€"
+        case .high:
+            return "€€€"
+        }
+    }
+}
+```
+
+### Structures
+Utilisez struct pour créer une structure. Les structures supportent plusieurs des mêmes comportements que les classes, y compris les méthodes et les initialisateurs. L'une des différences les plus importantes entre les structures et les classes est que les structures sont toujours copiées lorsqu'elles sont transmises dans votre code, alors que les classes sont transmises par référence.
+```swift
+struct Ipad {
+    let UUID: String
+    let model: String
+    let osVerion: String
+    
+    init(UUID: String, model: String, osVerion: String) {
+        self.UUID = UUID
+        self.model = model
+        self.osVerion = osVerion
+    }
+}
+```
+## Protocols et Extensions
+
+### Protocols
+les `protocol` en swift peuvent être considéré comme un interface en java. Les classes, les énumérations et les structures peuvent toutes adopter des protocoles.
+```swift
+protocol CarProtocol {
+    var brand: String { get set }
+    var model: String { get set }
+    var serialNumber: String { get }
+    
+    func fetchKilometers() -> Double
+}
+```
+### Extensions
+les extensions parmettent d'ajouter des fonctionnalités à un type existant
+```swift
+extension Ipad {
+
+    func simpleDescription() -> String {
+        return "UUID: \(UUID), model: \(model), osVerion: \(osVersion)"
+    } 
+
+}
+```
