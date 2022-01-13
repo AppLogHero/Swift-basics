@@ -7,7 +7,7 @@ struct Vaccin: Codable {
     let date: String
     let name: String
 }
-``
+```
 
 ## URLRequest
 URLRequest est une structure qui encapsule deux propriétés essentielles d'une requête HTTP: l'URL à charger et les politiques utilisées pour la charger. En outre, pour les demandes HTTP et HTTPS, URLRequest inclut la méthode HTTP (GET, POST, etc.) et les en-têtes HTTP.
