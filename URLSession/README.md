@@ -31,4 +31,42 @@ do {
     //error ..
 }
 ```
+
+## URLSession
+La classe URLSession fournit une API pour télécharger des données depuis et vers des APIs. Vous pouvez également utiliser cette API pour effectuer des téléchargements en arrière-plan lorsque votre application n'est pas en cours d'exécution ou, sous iOS, lorsque votre application est suspendue. URLSession possède une session partagée via un `singleton` pour les demandes de base.
+Au sein d'une session, vous pouvez créez des tâches qui, en option, téléchargent des données vers un serveur, puis les récupèrent à partir du serveur, soit sous forme de fichier sur disque, soit sous forme d'un ou plusieurs objets `NSData (Data)` en mémoire. L'API URLSession propose quatre types de tâches :
+
+* `Data tasks` envoient et reçoivent des données à l'aide d'objets NSData.
+
+* `Upload tasks` sont similaires aux `Data tasks`, mais elles envoient également des données (souvent sous la forme d'un fichier) et prennent en charge les téléchargements en arrière-plan lorsque l'application n'est pas en cours d'exécution.
+
+* `Download tasks récupèrent des données sous la forme d'un fichier et prennent en charge les téléchargements et les téléchargements en arrière-plan lorsque l'application n'est pas en cours d'exécution.
+
+* `WebSocket tasks` échangent des messages via TCP et TLS, en utilisant le protocole WebSocket défini dans la RFC 6455.
+```swift
+let request = URLRequest(...)
+URLSession.shared.dataTask(with: request) { data, urlResponse, error in
+    if let error = error {
+        //error
+    } else {
+        if let urlResponse = urlResponse as? HTTPURLResponse, let data = data {
+            switch urlResponse.statusCode {
+            case 200:
+                do {
+                    let results = try JSONDecoder().decode(Vaccin.self, from: data)
+                } catch let error {
+                    //error
+                }
+            case 404:
+                // do anything
+            case 500:
+                // do anything
+            default:
+                // do anything
+            }
+        }
+    }
+}
+```
+
  
