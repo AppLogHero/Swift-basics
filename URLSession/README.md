@@ -40,7 +40,7 @@ Au sein d'une session, vous pouvez créez des tâches qui, en option, téléchar
 
 * `Upload tasks` sont similaires aux `Data tasks`, mais elles envoient également des données (souvent sous la forme d'un fichier) et prennent en charge les téléchargements en arrière-plan lorsque l'application n'est pas en cours d'exécution.
 
-* `Download tasks récupèrent des données sous la forme d'un fichier et prennent en charge les téléchargements et les téléchargements en arrière-plan lorsque l'application n'est pas en cours d'exécution.
+* `Download tasks` récupèrent des données sous la forme d'un fichier et prennent en charge les téléchargements et les téléchargements en arrière-plan lorsque l'application n'est pas en cours d'exécution.
 
 * `WebSocket tasks` échangent des messages via TCP et TLS, en utilisant le protocole WebSocket défini dans la RFC 6455.
 ```swift
