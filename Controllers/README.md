@@ -43,6 +43,9 @@ class ViewController: UIViewController {
 ## UITableViewController
 
 La class `UITableViewController` hérite directement de `UIViewController`. Cette classe permet de créer un controleur de vue au format d'une liste scrollable. Le `UITableViewController` implémente également deux protocole, `UITableViewDelegate` et `UITableViewDataSource`. Le protocole `UITableViewDataSource` de gérer les données et de fournir des cellules pour la vue. Le protocol `UITableViewDelegate`permet la gestion des sélections, la configuration des `Headers` et `Footers`, la suppression et de réorganisation des cellules, et l'exécution d'autres actions dans la vue.
+
+![tableView](Images/tableView.png)
+
 ```swift
 import UIKit
 
