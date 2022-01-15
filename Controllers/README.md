@@ -179,3 +179,12 @@ class CollectionViewController: UICollectionViewController {
 }
 ```
 
+## UINavigationController
+
+Un `UINavigationController` est un contrôleur de vue conteneur qui gère un ou plusieurs `ViewController` enfants dans une interface de navigation. Dans ce type d'interface, un seul `ViewController` enfant est visible à la fois. La sélection d'un élément dans le `ViewController` pousse un nouveau `ViewController` à l'écran à l'aide d'une animation, masquant ainsi le `ViewController` précédent. Le fait d'appuyer sur le bouton "Retour" de la barre de navigation située en haut de l'interface supprime le `ViewController` supérieur, révélant ainsi le `ViewController` situé en dessous.
+
+![NavigationController](Images/NavigationController.png)
+
+```swift
+let navigationController = UINavigationController(rootViewController: UIViewController())
+```
