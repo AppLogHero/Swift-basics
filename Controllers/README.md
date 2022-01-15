@@ -8,6 +8,9 @@ Les principales responsabilités d'un contrôleur de vues sont les suivantes :
 * Répondre aux interactions des utilisateurs avec les vues.
 * Redimensionner les vues et gérer la disposition de l'interface globale.
 * Coordination avec d'autres objets - y compris d'autres contrôleurs de vues - dans votre application.
+
+### Cycle de vie
+![LifeCycle](Images/LifeCycle.png)
 ```swift
 import UIKit
 
