@@ -86,3 +86,17 @@ extension MyTextFieldController: UITextFieldDelegate {
     
 }
 ```
+
+## UIImageView
+`UIImageView`permet d'afficher toute image pouvant être spécifiée à l'aide de l'objet `UIImage`. la classe `UIImageView` peut afficher le contenu de nombreux fichiers image standard, tels que les fichiers JPEG et PNG. `UIImageView` utilise la propriété `contentMode` pour déterminer comment afficher l'image.
+
+```swift
+let catImage = UIImage(named: "cat.jpg")
+let myImageView:UIImageView = UIImageView()
+myImageView.contentMode = .scaleAspectFit
+myImageView.frame.size.width = 200
+myImageView.frame.size.height = 200
+myImageView.center = self.view.center
+myImageView.image = catImage
+```
+
