@@ -23,3 +23,10 @@ button.backgroundColor = .white
 button.setTitleColor(UIColor.black, for: .normal)
 button.addTarget(self, action: #selector(self.buttonTapped), for: .touchUpInside)
 ```
+
+## UILabel
+l'`UILabel` est une vue qui affiche une ou plusieurs lignes de texte. Vous pouvez complètement customiser les labels afin de les intégrer dans votre interface.
+```swift
+let label = UILabel()
+label.text = "EII2022"
+```
