@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 
 ## UITableViewController
 
-La class `UITableViewController` hérite directement de `UIViewController`. Cette classe permet de créer un controleur de vue au format d'une liste scrollable. Le `UITableViewController` implémente également deux protocole, `UITableViewDelegate` et `UITableViewDataSource`. Le protocole `UITableViewDataSource` de gérer les données et de fournir des cellules pour la vue. Le protocol `UITableViewDelegate`permet la gestion des sélections, la configuration des `Headers` et `Footers`, la suppression et de réorganisation des cellules, et l'exécution d'autres actions dans la vue.
+La class `UITableViewController` hérite directement de `UIViewController`. Cette classe permet de créer un controleur de vue au format d'une liste scrollable. Le `UITableViewController` implémente également deux protocole, `UITableViewDelegate` et `UITableViewDataSource`. Le protocole `UITableViewDataSource` permet de gérer les données et de fournir des cellules pour la vue. Le protocol `UITableViewDelegate`permet la gestion des sélections, la configuration des `Headers` et `Footers`, la suppression et la réorganisation des cellules, et l'exécution d'autres actions dans la vue.
 
 ![tableView](Images/tableView.png)
 
@@ -107,7 +107,7 @@ class TableViewController: UITableViewController {
 
 ## UICollectionViewController
 
-La classe `UICollectionViewController`fonctionne quasiment de la même façon que celle de l'`UITableViewController`, elle comporte également deux protocoles ayant le même rôle que vue précédement, `UICollectionViewDataSource` et `UICollectionViewDelegate`. Ce controleur de vue permet la création de liste scrollable verticale ou horizontale avec la possibilité d'affichage en grille.
+La classe `UICollectionViewController`fonctionne quasiment de la même façon que celle de l'`UITableViewController`, elle comporte également deux protocoles ayant le même rôle que vu précédement, `UICollectionViewDataSource` et `UICollectionViewDelegate`. Ce contrôleur de vue permet la création de liste scrollable verticale ou horizontale avec la possibilité d'affichage en grille.
 
 ![collectionView](Images/collectionView.png)
 
@@ -181,7 +181,7 @@ class CollectionViewController: UICollectionViewController {
 
 ## UINavigationController
 
-Un `UINavigationController` est un contrôleur de vue conteneur qui gère un ou plusieurs `ViewController` enfants dans une interface de navigation. Dans ce type d'interface, un seul `ViewController` enfant est visible à la fois. La sélection d'un élément dans le `ViewController` pousse un nouveau `ViewController` à l'écran à l'aide d'une animation, masquant ainsi le `ViewController` précédent. Le fait d'appuyer sur le bouton "Retour" de la barre de navigation située en haut de l'interface supprime le `ViewController` supérieur, révélant ainsi le `ViewController` situé en dessous.
+Un `UINavigationController` est un contrôleur de vue qui contient un ou plusieurs `ViewController` enfants dans une interface de navigation. Dans ce type d'interface, un seul `ViewController` enfant est visible à la fois. La sélection d'un élément dans le `ViewController` pousse un nouveau `ViewController` à l'écran à l'aide d'une animation, masquant ainsi le `ViewController` précédent. Le fait d'appuyer sur le bouton "Retour" de la barre de navigation située en haut de l'interface supprime le `ViewController` supérieur, révélant ainsi le `ViewController` situé en dessous.
 
 ![NavigationController](Images/NavigationController.png)
 

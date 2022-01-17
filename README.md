@@ -3,17 +3,17 @@
 ## Constantes et Variables
 
 ### Variables
-Pour créer une variable il suffit d'utiliser le mot-clé `var`
+Pour créer une variable il suffit d'utiliser le mot clé `var`
 ```swift
 var ma variable = "Swift"
 ```
-le typage des variable est optionnel mais il peut être préciser
+le typage des variables est optionnel mais il peut être précisé
 ```swift
 var ma variable: String = "Swift"
 ```
 
 ### Constantes
-Pour créer une constante il suffit d'utiliser le mot-clé `let`, de même que pour les variables, le typage est optionnel.
+Pour créer une constante il suffit d'utiliser le mot clé `let`, de même que pour les variables, le typage est optionnel.
 ```swift
 let maConstante = "Swift"
 let maConstante2: String = "Swift2"
@@ -126,7 +126,7 @@ repeat {
 
 ## Fonctions
 
-Pour créer une fonction il suffit d'utiliser le mot clé `func` et le symbole `->` suivie d'un type de retour si nécéssaire
+Pour créer une fonction il suffit d'utiliser le mot clé `func` et le symbole `->` suivi d'un type de retour si nécéssaire
 ```swift
 func returnVoid() {
     print("Void")
@@ -148,7 +148,7 @@ func returnTwoNumber() -> (numberOne: Int, numberTwo: Int) {
 
 ## Objets et Classes
 
-Pour créer un classe il suffit d'utiliser le mot clé `class`. Une classe peut contenir des propriétés (`var`,`let`) mais également des functions à la différence que, c'est éléments dépenderont du contexte de la classe
+Pour créer un classe il suffit d'utiliser le mot clé `class`. Une classe peut contenir des propriétés (`var`,`let`) mais également des fonctions à la différence que, ces éléments dépenderont du contexte de la classe
 ```swift
 //Déclaration
 class Car {
@@ -225,10 +225,10 @@ struct Ipad {
     }
 }
 ```
-## Protocols et Extensions
+## Protocoles et Extensions
 
 ### Protocols
-les `protocol` en swift peuvent être considéré comme un interface en java. Les classes, les énumérations et les structures peuvent toutes adopter des protocoles.
+les `protocol` en swift peuvent être considérés comme un interface en java. Les classes, les énumérations et les structures peuvent toutes adopter des protocoles.
 ```swift
 protocol CarProtocol {
     var brand: String { get set }
@@ -263,7 +263,7 @@ values.map { value in
 ```
 
 ### compactMap
-compactMap est la même principe que map à la différence qu'il filtera le valeur `nil` et fera en sorte d'`unwrap` les valeurs optionel
+compactMap est le même principe que map à la différence qu'il filtrera les valeurs `nil` et fera en sorte d'`unwrap` les valeurs optionelles
 ```swift
 let values: [Int?] = [0, 1, 2, nil, 4]
 values.flatMap { values in
@@ -272,7 +272,7 @@ values.flatMap { values in
 ```
 
 ###reduce
-reduce permets de prendre tout les élement d'une liste est d'effectuer des opérations
+reduce permet de prendre tous les élements d'une liste est d'effectuer des opérations
 ```swift
 let values = [0, 1, 2, 3]
 let sum = values.reduce(0, +) //6

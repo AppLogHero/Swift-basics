@@ -12,7 +12,7 @@ let myView = UIView(frame: rect)
 ```
 
 ## UIButton
-Les `UIButton`sont comme leur nom indique, des boutons. ils permetent d'ajouter un contrôle qui exécute votre code en réponse aux interactions de l'utilisateur. Lorsque vous ajoutez un bouton à votre interface, vous pouvez définir le type du bouton au moment de sa création, fournir un titre ou une image, dimensionner le bouton en fonction de votre contenu, relier une ou plusieurs méthodes d'action au bouton.
+Les `UIButton`sont comme leur nom l'indique, des boutons. Ils permettent d'ajouter un contrôle qui exécute votre code en réponse aux interactions de l'utilisateur. Lorsque vous ajoutez un bouton à votre interface, vous pouvez définir le type du bouton au moment de sa création, fournir un titre ou une image, dimensionner le bouton en fonction de votre contenu, relier une ou plusieurs méthodes d'action au bouton.
 
 ![UIButton](Images/UIButton.png)
 
@@ -88,7 +88,7 @@ extension MyTextFieldController: UITextFieldDelegate {
 ```
 
 ## UIImageView
-`UIImageView`permet d'afficher toute image pouvant être spécifiée à l'aide de l'objet `UIImage`. la classe `UIImageView` peut afficher le contenu de nombreux fichiers image standard, tels que les fichiers JPEG et PNG. `UIImageView` utilise la propriété `contentMode` pour déterminer comment afficher l'image.
+`UIImageView`permet d'afficher toute image pouvant être spécifiée à l'aide de l'objet `UIImage`. La classe `UIImageView` peut afficher le contenu de nombreux fichiers image standard, tels que les fichiers JPEG et PNG. `UIImageView` utilise la propriété `contentMode` pour déterminer comment afficher l'image.
 
 ```swift
 let catImage = UIImage(named: "cat.jpg")
