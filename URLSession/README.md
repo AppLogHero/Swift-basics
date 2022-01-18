@@ -69,4 +69,40 @@ URLSession.shared.dataTask(with: request) { data, urlResponse, error in
 }
 ```
 
+## @escaping
+
+```swift
+func fetch(_ completion: @escaping(Vaccin) -> Void) {
+
+let request = URLRequest(...)
+let task = URLSession.shared.dataTask(with: request) { data, urlResponse, error in
+    if let error = error {
+        //error
+    } else {
+        if let urlResponse = urlResponse as? HTTPURLResponse, let data = data {
+            switch urlResponse.statusCode {
+            case 200:
+                do {
+                    let results = try JSONDecoder().decode(Vaccin.self, from: data)
+                    //Completion block
+                    completion(results)
+                } catch let error {
+                    //error
+                }
+            case 404:
+                // do anything
+            case 500:
+                // do anything
+            default:
+                // do anything
+            }
+        }
+    }
+}
+
+task.resume()
+
+}
+```
+
  
